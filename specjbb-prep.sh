@@ -4,7 +4,11 @@ yum install -y fontconfig, libXfont, libfontenc, ttmkfdir, xorg-x11-font-utils,x
 yum install -y freetype-devel
 yum install -y numactl
 
-cat <<-EOF > env.sh
+cp run_multi_4groupok.sh ..
+cp run_multi_1groupok.sh ..
+cp specjbb-test.sh ..
+
+cat <<-EOF > ../env.sh
 #!/bin/bash
 
 export JAVA_HOME=/root/jdk1.8.0_131
